@@ -1,0 +1,11 @@
+# 47 string methods are available for python, we will be looking at three of them that help in changing cases
+
+
+# capitalize() Method
+The capitalize() method in Python transforms a string so that only the first letter is uppercase while the rest of the string becomes lowercase. For example, calling capitalize() on "hello WORLD" results in "Hello world", ensuring that only the first character is capitalized. This method is useful when formatting sentences or user input to maintain consistency. It is especially helpful in applications where text must follow proper sentence case formatting. However, it does not work correctly with multiple sentences in a single string, as it only affects the first character. Despite this limitation, it remains a valuable tool in text processing tasks.
+
+# title() Method
+The title() method in Python converts the first letter of each word in a string to uppercase while making the rest lowercase. This is useful when formatting text for headings, book titles, or proper names. For example, applying title() to the string "hello world" results in "Hello World". However, it does not correctly handle exceptions like "McDonald’s" or "iPhone," as it capitalizes every word's first letter. Despite this, title() remains a handy tool for basic text formatting. Many programmers use it when dealing with user-generated text that requires a neat and readable appearance.
+
+# swapcase() Method
+The swapcase() method in Python changes uppercase letters to lowercase and lowercase letters to uppercase. This method is useful when dealing with case-sensitive text transformations. For example, applying swapcase() to "Hello World" results in "hELLO wORLD", which completely reverses the case of every character. It is often used in applications where text needs to be obfuscated or reformatted for a stylistic effect. While it is not commonly used in everyday string processing, it can be helpful in creative text formatting or debugging case-related issues. This method works effectively on both letters and ignores numbers and symbols.
