@@ -1,4 +1,4 @@
-# 47 string methods are available for python, we will be looking at three of them that help in changing cases
+# 47 string methods are available for python, we will be looking at the main ones.
 
 
 # capitalize() Method
@@ -9,3 +9,12 @@ The title() method in Python converts the first letter of each word in a string 
 
 # swapcase() Method
 The swapcase() method in Python changes uppercase letters to lowercase and lowercase letters to uppercase. This method is useful when dealing with case-sensitive text transformations. For example, applying swapcase() to "Hello World" results in "hELLO wORLD", which completely reverses the case of every character. It is often used in applications where text needs to be obfuscated or reformatted for a stylistic effect. While it is not commonly used in everyday string processing, it can be helpful in creative text formatting or debugging case-related issues. This method works effectively on both letters and ignores numbers and symbols.
+
+# upper() Method
+The upper() method in Python converts all lowercase letters in a string to uppercase. This is useful when you need to standardize text for comparison, such as checking user input without worrying about letter case. For example, applying upper() to "hello world" results in "HELLO WORLD", making the entire string uppercase. It does not affect numbers or special characters, ensuring only letters are modified. This method is commonly used in applications that require case-insensitive processing, such as usernames or passwords. Since upper() does not modify the original string but returns a new one, it can be easily used in various text manipulation tasks.
+
+# lower() Method
+The lower() method in Python converts all uppercase letters in a string to lowercase. This is particularly useful when working with case-insensitive searches, ensuring consistency in text processing. For example, applying lower() to "Hello WORLD" results in "hello world", making all letters lowercase. It is commonly used in applications where user input needs to be processed uniformly, such as in search functions or database queries. This method does not modify non-alphabetic characters, making it safe for processing mixed content. Like upper(), lower() does not change the original string but instead returns a new one with the transformation applied.
+
+# find() Method
+The find() method in Python searches for a specific substring within a string and returns the index of its first occurrence. If the substring is not found, it returns -1, indicating that the search was unsuccessful. For example, applying find("world") to "Hello world" results in 6, because "world" starts at index 6. This method is useful in string searching operations, such as checking if a keyword exists in user input. Unlike similar methods like index(), find() does not raise an error if the substring is missing, making it safer to use. It also supports an optional start and end index, allowing more refined searches within a specific portion of the string.
