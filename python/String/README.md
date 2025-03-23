@@ -18,3 +18,12 @@ The lower() method in Python converts all uppercase letters in a string to lower
 
 # find() Method
 The find() method in Python searches for a specific substring within a string and returns the index of its first occurrence. If the substring is not found, it returns -1, indicating that the search was unsuccessful. For example, applying find("world") to "Hello world" results in 6, because "world" starts at index 6. This method is useful in string searching operations, such as checking if a keyword exists in user input. Unlike similar methods like index(), find() does not raise an error if the substring is missing, making it safer to use. It also supports an optional start and end index, allowing more refined searches within a specific portion of the string.
+
+# index() Method
+The index() method searches for a substring within a string and returns its first occurrence's index. If the substring is not found, it raises a ValueError, unlike find(), which returns -1. It is useful when you expect a string to contain a specific word and need its exact position. This method also allows specifying a start and end index for a more precise search. For example, searching "world" in "Hello world" returns 6 because "world" starts at index 6. However, if the substring is missing, the program will stop with an error, so using find() might be safer in some cases.
+
+# startswith() Method
+The startswith() method checks whether a string begins with a given substring and returns True or False. This is useful when validating input formats, such as checking if a file name starts with a specific prefix. If the substring matches the start of the string, startswith() returns True; otherwise, it returns False. It also supports optional start and end indexes to check within a specific part of the string. For example, "Hello world".startswith("Hello") returns True, but "Hello world".startswith("world") returns False because "world" is at the end, not the start.
+
+# endswith() Method
+The endswith() method checks whether a string ends with a given substring and returns True or False. This is useful when validating file extensions, such as checking if a filename ends with .txt or .pdf. If the string ends with the specified substring, endswith() returns True; otherwise, it returns False. It also supports optional start and end indexes to check within a specific range. For example, "Hello world".endswith("world") returns True, but "Hello world".endswith("Hello") returns False because "Hello" is at the start, not the end.
