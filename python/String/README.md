@@ -36,3 +36,22 @@ The replace() method is used to replace a specified substring with another subst
 
 # strip() Method
 The strip() method is used to remove leading and trailing whitespace (spaces, tabs, newlines) from a string. It is useful when cleaning user input, as users often enter data with extra spaces before or after the text. If no argument is provided, it removes whitespace by default, but you can specify a specific character to remove unwanted symbols from both ends of the string. This method does not remove characters from the middle of the string—only from the start and end. If the string consists only of the specified characters, the method will return an empty string. strip() is commonly used in text processing, form validation, and when handling file names or URLs.
+
+# lstrip() Method
+The lstrip() method removes all leading (left-side) whitespace from a string. If no argument is provided, it defaults to removing spaces, tabs, and newlines at the beginning of the string. You can also specify a specific character or set of characters to remove instead of whitespace. Unlike strip(), which removes both leading and trailing whitespace, lstrip() only removes characters from the beginning. If there are no matching characters at the start, the string remains unchanged. This method is useful when processing user input, cleaning up filenames, or working with formatted data.
+
+# rstrip() Method
+The rstrip() method removes all trailing (right-side) whitespace from a string. Like lstrip(), it removes spaces, tabs, and newlines by default unless a specific character set is provided. This method is useful when cleaning up data that has unwanted trailing spaces, such as user input or formatted text. If the specified character is not found at the end of the string, it remains unchanged. Unlike strip(), which removes from both sides, rstrip() only affects the right side. It is commonly used for processing log files, trimming text output, and formatting strings properly.
+
+# split() Method
+The split() method splits a string into a list of substrings based on a specified delimiter. If no delimiter is provided, it defaults to splitting by whitespace. This method is useful for breaking down sentences into words, processing CSV data, and extracting meaningful parts of a string. The original string remains unchanged since strings in Python are immutable. You can specify a maximum number of splits using the optional maxsplit argument. This method is widely used in text processing, natural language processing (NLP), and handling structured data.
+
+# join() Method
+The join() method is the reverse of split(), as it joins elements of an iterable (such as a list or tuple) into a single string, using a specified separator. It is useful when formatting lists into human-readable sentences or when reconstructing structured data. The method only works with iterables that contain strings, so non-string elements must be converted first. Unlike split(), which breaks a string into parts, join() merges multiple parts into one. This method is commonly used in data processing, file handling, and text formatting.
+
+# isalpha() Method
+The isalpha() method returns True if all characters in a string are alphabetic (A-Z, a-z) and False otherwise. It does not allow spaces, numbers, or special characters. This method is useful for validating names, checking if user input contains only letters, and filtering text-based data. If the string is empty, isalpha() returns False. Unlike isalnum(), which allows numbers, isalpha() strictly checks for alphabetic characters only. It is commonly used in input validation and text filtering.
+
+# isdigit() Method
+The isdigit() method returns True if all characters in a string are numeric (0-9) and False otherwise. It does not allow letters, spaces, or special characters. It is useful for validating numeric input, ensuring correct data formats, and processing numbers from strings. If the string is empty, it returns False. Unlike isdecimal(), which strictly checks decimal numbers, isdigit() also accepts Unicode digit characters. This method is often used in data validation and input processing.
+
