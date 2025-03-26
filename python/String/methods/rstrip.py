@@ -1,14 +1,14 @@
-text = "Hello, Python!   "
-clean_text = text.rstrip()
-print(clean_text)  # Output: "Hello, Python!"
+text1 = "Hello, Python!   "
+clean_text1 = text1.rstrip()
+print(clean_text1)  # Output: "Hello, Python!"
 
 
-text = "Python####"
-clean_text = text.rstrip("#")
-print(clean_text)  # Output: "Python"
+text2 = "Python####"
+clean_text2 = text2.rstrip("#")
+print(clean_text2)  # Output: "Python"
 
 
-text = "Hello123"
-clean_text = text.rstrip("123")
-print(clean_text)  # Output: "Hello"
+text3 = "Hello123"
+clean_text3 = text3.rstrip("123")
+print(clean_text3)  # Output: "Hello"
   

@@ -1,13 +1,13 @@
-text = "Python is awesome"
-words = text.split()
+text1 = "Python is awesome"
+words = text1.split()
 print(words)  # Output: "['Python', 'is', 'awesome']"
 
 
-text = "apple,banana,grape"
-fruits = text.split(",")
+text2 = "apple,banana,grape"
+fruits = text2.split(",")
 print(fruits)  # Output: "['apple', 'banana', 'grape']"
 
 
-text = "name:age:city:country"
-parts = text.split(":", 2)
+text3 = "name:age:city:country"
+parts = text3.split(":", 2)
 print(parts)  # Output: "['name', 'age', 'city:country']"

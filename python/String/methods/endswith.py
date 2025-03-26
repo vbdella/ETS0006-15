@@ -1,7 +1,7 @@
-text = "wasss crackinn"
-result = text.endswith("crackinn")
-print(result) # Output: "True"
+text1 = "wasss crackinn"
+result1 = text1.endswith("crackinn")
+print(result1) # Output: "True"
 
-text = "wasss crackinn"
-result = text.endswith("wasss")
-print(result) # Output: "False"
+text2 = "wasss crackinn"
+result2 = text2.endswith("wasss")
+print(result2) # Output: "False"

@@ -1,8 +1,8 @@
-text = "   Hello, House!   "
-clean_text = text.strip()
-print(clean_text)  # Output: "Hello, House!"
+text1 = "   Hello, House!   "
+clean_text1 = text1.strip()
+print(clean_text1)  # Output: "Hello, House!"
 
 
-text = "---Python---"
-clean_text = text.strip("-")
-print(clean_text)  # Output: "Python"
+text2 = "---Python---"
+clean_text2 = text2.strip("-")
+print(clean_text2)  # Output: "Python"

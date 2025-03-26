@@ -1,7 +1,7 @@
-text = "Hello"
-print(text.isalpha())  # Output: "True"
+text1 = "Hello"
+print(text1.isalpha())  # Output: "True"
 
 
-text = "Hello123"
-print(text.isalpha())  # Output: "False"
+text2 = "Hello123"
+print(text2.isalpha())  # Output: "False"
  
