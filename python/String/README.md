@@ -66,3 +66,15 @@ The format() method allows you to insert variables into a string using placehold
 
 # (f"") Method
 F-strings (f"") allow you to embed variables directly into strings. They were introduced in Python 3.6 as a faster and more readable alternative to the .format() method. With f-strings, you can include expressions inside {} without concatenation, making the code more concise. They support calculations, method calls, and format specifications (like rounding numbers). Unlike .format(), f-strings are evaluated at runtime, making them the preferred way to format strings in modern Python. Because of their speed and simplicity, f-strings are widely used in logging, debugging, and dynamic text generation.
+
+# len() Method
+The len() function returns the number of characters in a string, including spaces and special symbols. It is commonly used to check the length of user input, validate passwords, or process text data. Unlike some other languages, len() is a built-in function in Python rather than a string method. This function is useful for handling lists, tuples, and dictionaries as well. If the string is empty, len() returns 0, indicating there are no characters. It is often combined with loops and conditionals to control program logic.
+
+# encode() Method
+The encode() method converts a string into a sequence of bytes using a specified encoding (default is "utf-8"). This is useful for handling text data in different formats, such as files, network transmission, or encryption. Encoding is necessary when dealing with non-ASCII characters, ensuring compatibility across different systems. The encoded result is of type bytes, not str, meaning it cannot be directly printed as a normal string. The reverse operation is decode(), which converts bytes back into a string. Encoding is particularly useful for working with web scraping, file handling, and APIs.
+
+# islower() Method
+The islower() method returns True if all letters in the string are lowercase. If the string contains uppercase letters, numbers, or special characters, it returns False. This method is useful for text processing, password validation, and input checks. Unlike lower(), which converts a string to lowercase, islower() only checks if the string is already in lowercase. If the string is empty or contains no letters, islower() returns False. It is commonly used in case-sensitive applications.
+
+# isupper() Method
+The isupper() method returns True if all letters in the string are uppercase. If the string contains lowercase letters, numbers, or special characters, it returns False. This method is useful for validating uppercase text formats, such as license plates, country codes, and abbreviations. Unlike upper(), which converts a string to uppercase, isupper() only checks if it is already in uppercase. If the string contains no letters, isupper() returns False. This method is helpful in case-sensitive validation tasks.
