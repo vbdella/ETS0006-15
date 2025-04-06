@@ -15,3 +15,12 @@ The extend() method adds elements from another iterable (like a list, tuple, or 
 
 # index() method
 The index() method returns the first index (position) of a specified element in a list. It is useful for searching and locating items, especially in ordered data. If the item is not found, it raises a ValueError — unlike count(), which returns 0. You can optionally provide a start and end range to search within a part of the list. This method is case-sensitive and looks for an exact match. It's great for checking positions before deleting or replacing items.
+
+# insert() method
+The insert() method allows you to add an element at a specific index in a list. Unlike append(), which always adds at the end, insert() gives precise control over where the new element goes. It shifts the current element at that position (and all elements after it) one position to the right. If the index is greater than the length of the list, the element is simply added at the end. If it’s negative, the index is counted from the end of the list (like -1 for the last item). This is useful when you need to maintain a specific order or place data in a particular spot.
+
+# pop() method
+The pop() method removes and returns an element from a list, by default the last item. If you provide an index, it removes and returns the item at that specific position. This method is useful when you want to retrieve and discard items, like implementing stack behavior (LIFO). If you try to pop from an empty list, it will raise an IndexError. It modifies the original list in place. It's very handy in programs involving undo functionality, data cleanup, or extracting elements one-by-one.
+
+# remove() method
+The remove() method deletes the first occurrence of a specified value in a list. It does not return the value, it only deletes it. If the value is not found in the list, it raises a ValueError. This is different from pop() which uses an index — remove() uses the value itself. Only the first match is deleted, even if the item appears multiple times. This method is ideal when you're filtering or cleaning up lists by value.
