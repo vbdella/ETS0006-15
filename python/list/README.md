@@ -24,3 +24,9 @@ The pop() method removes and returns an element from a list, by default the last
 
 # remove() method
 The remove() method deletes the first occurrence of a specified value in a list. It does not return the value, it only deletes it. If the value is not found in the list, it raises a ValueError. This is different from pop() which uses an index — remove() uses the value itself. Only the first match is deleted, even if the item appears multiple times. This method is ideal when you're filtering or cleaning up lists by value.
+
+# reverse() method
+The reverse() method reverses the elements of a list in place, meaning it modifies the original list directly without returning a new one. It doesn't sort the values — it simply flips the order, so the last item becomes first and the first becomes last. This is useful in scenarios where you want to traverse data backward, such as when building stacks or reversing chronological lists. Since it doesn’t return anything (None), you can’t assign its result to a new variable. You can reverse lists with any data types, including numbers, strings, or mixed items. It's often used with sort() when you want a descending order after sorting.
+
+# sort() method
+The sort() method arranges the items in a list in ascending order by default. It works on lists of numbers or strings but cannot sort mixed data types. The method modifies the list in place and returns None. You can use the optional argument reverse=True to sort the list in descending order. For custom sorting, you can also pass a key= function, like sorting by length or custom rules. It's commonly used in data analysis, ranking, and organizing outputs.
