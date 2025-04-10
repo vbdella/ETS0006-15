@@ -15,3 +15,12 @@ The items() method returns a view object that displays a list of a dictionary’
 
 # keys() method
 The keys() method returns a view object containing all the keys in the dictionary. This allows you to access, loop, or check for specific keys without touching their values. Like items(), the view updates if the dictionary changes. It’s useful for checking if a key exists, building dropdowns, or doing key comparisons. You can convert it to a list if you need indexing or advanced slicing. It’s one of the simplest and most frequently used dictionary tools in Python.
+
+# pop() method
+The pop() method removes a key from the dictionary and returns its value. If the key does not exist, it raises a KeyError unless a default value is provided. It’s useful when you want to extract and remove specific items at the same time. This is often used in scenarios like reducing data, transferring values, or modifying structures during iteration. It changes the original dictionary by deleting the specified key. Using pop() with a default helps make the code safer and more readable.
+
+# popitem() method
+The popitem() method removes and returns the last inserted key-value pair as a tuple. If the dictionary is empty, it raises a KeyError. It’s useful when treating dictionaries like stacks or managing the most recent additions. This method modifies the dictionary and is mostly used in order-sensitive applications (since Python 3.7+ preserves insertion order). It's ideal for undo-style behavior, temporary storage, or rolling back data. The return value is always a (key, value) tuple.
+
+# setdefault() method
+The setdefault() method looks for a key in the dictionary and returns its value if it exists. If the key is not found, it inserts the key with a default value and then returns that value. It’s useful when you want to ensure a key exists without overwriting existing values. This is often used in counting, grouping, or initializing nested structures. It helps reduce the need for multiple if statements. This method is great for working with dynamic or unknown keys.
