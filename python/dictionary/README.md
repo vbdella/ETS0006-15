@@ -24,3 +24,9 @@ The popitem() method removes and returns the last inserted key-value pair as a t
 
 # setdefault() method
 The setdefault() method looks for a key in the dictionary and returns its value if it exists. If the key is not found, it inserts the key with a default value and then returns that value. It’s useful when you want to ensure a key exists without overwriting existing values. This is often used in counting, grouping, or initializing nested structures. It helps reduce the need for multiple if statements. This method is great for working with dynamic or unknown keys.
+
+# update() method
+The update() method adds new key-value pairs or updates existing ones in a dictionary. It takes another dictionary or iterable of key-value pairs as input and merges it into the original dictionary. If the keys already exist, their values are overwritten with the new ones. This method is great for combining dictionaries or applying batch updates. It modifies the dictionary in-place and doesn’t return anything. It’s especially useful when working with configurations, user inputs, or merging data sources.
+
+# values() method
+The values() method returns a view object containing all the values from the dictionary. This view updates automatically if the dictionary changes. It's mostly used when you only care about the values, not the keys. You can loop through it, convert it to a list, or use it in calculations. It’s useful for checking if a certain value exists or for summing numeric data. This method is often used in reporting, stats, and quick lookups.
