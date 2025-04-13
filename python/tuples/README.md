@@ -1,0 +1,5 @@
+# index() method
+The index() method returns the first index (position) where a specified value appears in the tuple. If the value is not found, it raises a ValueError. It is useful when you need to know where a certain item is located in the tuple. You can also pass optional start and end indexes to search within a specific range. It’s a handy method for searching and data lookup tasks in immutable sequences. This method works exactly like in lists but applies to tuples.
+
+# count() method
+The count() method returns the number of times a specific value appears in a tuple. It’s great for analyzing data or checking frequency of items in a collection. The method is simple and returns an integer. If the item is not found, it returns 0 instead of raising an error. It's often used in statistics, voting systems, and duplicate checking. This method does not modify the tuple since tuples are immutable.
