@@ -15,3 +15,12 @@ The union() method returns a new set containing all unique elements from the set
 
 # intersection() method
 The intersection() method returns a new set containing only the elements that exist in all sets. It’s used to find common data, like shared tags or matched records. The original sets are not changed. This method helps narrow down results or detect overlaps between datasets. You can also use the & operator as a shortcut. If there are no common items, it returns an empty set.
+
+# difference() method
+The difference() method returns a new set with elements that exist in the first set but not in the others. It's useful when you want to exclude specific values or find what’s unique to one dataset. The method does not modify the original set. You can compare against multiple sets at once. It works best when identifying non-overlapping items, like missing data. The - operator is a shorthand for it.
+
+# symmetric_difference() method
+The symmetric_difference() method returns a new set with elements that are in one of the sets, but not in both. It essentially combines the sets and removes the common items. This is great when you want to highlight differences. The method is non-destructive — it keeps the original sets unchanged. You can use the ^ operator as a shortcut. It’s perfect for spotting mismatches between datasets.
+
+# update() method
+The update() method adds all elements from another set or iterable to the current set. Unlike union(), it modifies the original set in-place instead of returning a new one. It avoids duplicates, so only new unique elements are added. You can update a set with multiple iterables. This method is useful when merging or expanding datasets. It’s commonly used for building a growing collection of unique items.
