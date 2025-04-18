@@ -24,3 +24,12 @@ The symmetric_difference() method returns a new set with elements that are in on
 
 # update() method
 The update() method adds all elements from another set or iterable to the current set. Unlike union(), it modifies the original set in-place instead of returning a new one. It avoids duplicates, so only new unique elements are added. You can update a set with multiple iterables. This method is useful when merging or expanding datasets. It’s commonly used for building a growing collection of unique items.
+
+# intersection_update() method
+The intersection_update() method updates the original set to keep only the elements found in both sets. It is different from intersection() because it modifies the set in-place and returns None. It’s useful when you want to reduce a set to just the common values shared with another. This method can take multiple iterables. It’s commonly used in data filtering and comparisons. After this operation, the original set contains only the shared items.
+
+# difference_update() method
+The difference_update() method removes elements from the original set that also exist in the other set(s). It is like difference(), but changes the original set instead of returning a new one. This is good for filtering out unwanted or duplicate values. You can pass multiple sets or iterables to compare against. The original set is permanently changed. It's a clean and efficient way to exclude elements.
+
+# symmetric_difference_update() method
+The symmetric_difference_update() method updates the set to contain elements that are in either set but not in both. It removes the common elements and adds the unique ones. This operation modifies the set directly and returns None. It’s great when you need to highlight differences between sets. It can be visualized as a merge that deletes duplicates. Use this when comparing mismatched or changing datasets.
