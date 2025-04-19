@@ -33,3 +33,12 @@ The difference_update() method removes elements from the original set that also 
 
 # symmetric_difference_update() method
 The symmetric_difference_update() method updates the set to contain elements that are in either set but not in both. It removes the common elements and adds the unique ones. This operation modifies the set directly and returns None. It’s great when you need to highlight differences between sets. It can be visualized as a merge that deletes duplicates. Use this when comparing mismatched or changing datasets.
+
+# issubset() method
+The issubset() method checks whether all elements of one set exist in another. It returns True if the calling set is a subset of the given set, and False otherwise. A subset means “contained inside,” so if A.issubset(B) is True, all of A must be in B. This method is useful in validation, filtering, and hierarchy comparisons. The original sets remain unchanged. It is often used in logical checks or access control.
+
+# issuperset() method
+The issuperset() method is the reverse of issubset(). It checks whether all elements of another set are contained in the current set. It returns True if the current set is a superset of the other, and False if not. It’s useful for ensuring required elements are covered. Just like issubset(), this method does not change the sets. Supersets are helpful in permission systems, data completeness checks, and condition matching.
+
+# isdisjoint() method
+The isdisjoint() method checks if two sets have no elements in common. It returns True if they are completely different, and False if there’s even one element in common. This is useful when filtering or preventing duplicates between categories. It helps detect total separation between two datasets. If the sets are empty or completely different, it returns True. Otherwise, it returns False.
