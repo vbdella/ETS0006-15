@@ -42,3 +42,9 @@ The issuperset() method is the reverse of issubset(). It checks whether all elem
 
 # isdisjoint() method
 The isdisjoint() method checks if two sets have no elements in common. It returns True if they are completely different, and False if there’s even one element in common. This is useful when filtering or preventing duplicates between categories. It helps detect total separation between two datasets. If the sets are empty or completely different, it returns True. Otherwise, it returns False.
+
+# clear() method
+The clear() method is used to empty a set, removing all elements from it. After using this method, the set becomes an empty set (set()). It is useful when you want to reuse the same set variable but start fresh. This method modifies the original set directly and returns nothing. It does not delete the set object—only its contents. It's helpful for resetting values during loops or data processing.
+
+# copy() method
+The copy() method is used to create a new set with the same elements as the original. It’s called a shallow copy because it copies the elements, not the reference to the set itself. This is useful when you want to work with a duplicate without changing the original. The two sets become independent — changing one doesn’t affect the other. It’s often used in backups or before transformation. The copy() method is clean and returns a new set.
